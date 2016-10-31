@@ -65,7 +65,7 @@ void Numbers::printDescription()
                 
                 cout << lessThan20[a] << " " << thousand << " " << lessThan20[b] << " " << hundred << " " << tens[c] << " " << lessThan20[d];
             }
-            else if (((number%1000) % 100) > 20)//last two digits is 00
+            else if (((number%1000) % 100) > 20)//last digits is 0
             {
                 int a = (number / 1000); //thousands
                 int b = ((number % 1000) / 100); //hundreds

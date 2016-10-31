@@ -17,7 +17,8 @@ class dayOfYear
 private:
     int day;
     string monthArray[12] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-    int totalDay[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    int totalDay[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}; // number of days in a month
+    int totalYear = 365; //total days in a year
     
 public:
     dayOfYear (int day);

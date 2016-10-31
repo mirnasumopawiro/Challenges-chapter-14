@@ -13,10 +13,12 @@ using namespace std;
 int main()
 {
     int choice;
-    cout << "Enter a number from 0-365\n";
+    cout << "Enter a number from 0-365: ";
     cin >> choice;
     
+    dayOfYear day(choice);
     
+    day.printDate();
     
     return 0;
 }

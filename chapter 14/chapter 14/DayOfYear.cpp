@@ -15,10 +15,24 @@ dayOfYear::dayOfYear (int day)
 void dayOfYear::printDate()
 {
     int position = 0;
-    for (int i = 0; i < 12; i++)
+    
+    cout << "Day " << day;
+    
+    for (int i = 11; i > 0; i--)
+    {
         if (day <= 365)
         {
-            day -= totalDay[i];
-            position = i++;
+            position = i - 1;
+            totalYear -= totalDay[i];
         }
+    }
+    
+    
+    for (int j = 0; j < position; j++)
+    {
+        int *ptrDate = &day;
+        *ptrDate -= totalDay[j];
+    }
+    
+    cout << " is " << monthArray[position] << " " << day << endl;
 }
